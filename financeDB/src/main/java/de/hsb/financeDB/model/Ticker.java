@@ -11,7 +11,7 @@ public class Ticker {
 
 	}
 
-	public Ticker(String symbol, String description, ArrayList<Stockvalue> values) {
+	public Ticker(String symbol, String description) {
 		super();
 		this.symbol = symbol;
 		this.description = description;

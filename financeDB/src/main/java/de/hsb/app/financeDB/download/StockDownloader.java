@@ -15,5 +15,6 @@ import db.hsb.financeDB.controller.DownloadController;
 
 public class StockDownloader extends DownloadController {
 
+	
 
 }
