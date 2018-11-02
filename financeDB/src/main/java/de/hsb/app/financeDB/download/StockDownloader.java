@@ -1,6 +1,8 @@
 package de.hsb.app.financeDB.download;
 
 import java.io.File;
+import java.io.IOException;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -11,7 +13,7 @@ import org.apache.http.util.EntityUtils;
 
 public class StockDownloader implements iDownload {
 
-	public void downloadURL(String url, String filename, String file_ex) {
+	public void downloadURL(String url, String filename, String file_ex) throws IOException {
 		HttpGet request = null;
 	    try {
 	      HttpClient client = HttpClientBuilder.create().build();
@@ -27,6 +29,5 @@ public class StockDownloader implements iDownload {
 	        request.releaseConnection();
 	      }
 	    }
-	  }		
-	}
+	  }
 }
